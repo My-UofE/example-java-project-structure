@@ -37,7 +37,7 @@ All the following commands should be executed from the root project directory (i
 
 ##### Build the binaries
 
- the main project folder compile all classes in order of dependencies.
+The first step of packaging our project code is to compile the binaries and store into the `bin` folder. To do this we compile all our project classes in order of dependencies (i.e. here we cannot compile `MyServiceInterface.java` until we have compiled `Element.java`)
 
 The `-d bin` argument saves the resulting `.class` binaries into the project's `bin` folder.
 
